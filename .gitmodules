@@ -1,0 +1,3 @@
+[submodule "fdroid/Fennec"]
+	path = fdroid/Fennec
+	url = https://gitlab.com/RisingHRZN/android_packages_apps_Fennec.git
