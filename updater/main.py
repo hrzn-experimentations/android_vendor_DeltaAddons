@@ -54,6 +54,7 @@ update_if_needed('fdroid/NeoStore', fdroid_recommended_release(fdroid_main_repo,
 update_if_needed('fdroid/LibreTube', fdroid_recommended_release(fdroid_main_repo, 'com.github.libretube'))
 update_if_needed('fdroid/MaterialFiles', fdroid_recommended_release(fdroid_main_repo, 'me.zhanghai.android.files'))
 update_if_needed('fdroid/Metro', fdroid_recommended_release(fdroid_main_repo, 'io.github.muntashirakon.Music'))
+update_if_needed('fdroid/Seal', fdroid_recommended_release(fdroid_main_repo, 'com.junkfood.seal'))
 
 # IzzyOnDroid apps
 update_if_needed('fdroid/Metrolist', fdroid_recommended_release(fdroid_izzy_repo, 'com.metrolist.music'))
