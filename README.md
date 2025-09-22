@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/hrzndelta/android_vendor_DeltaAddons/blob/main/banner.png">
+<img src="https://github.com/hrzndelta/android_vendor_DeltaAddons/blob/main/Banner.png">
 </p>
 
 # Quick look
