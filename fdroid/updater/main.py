@@ -43,18 +43,13 @@ fdroid_main_repo = 'https://www.f-droid.org/repo'
 fdroid_microg_repo = 'https://microg.org/fdroid/repo'
 fdroid_izzy_repo = 'https://apt.izzysoft.de/fdroid/repo'
 
-# microG module
-update_if_needed('microg/FakeStore', fdroid_recommended_release(fdroid_microg_repo, 'com.android.vending'))
-update_if_needed('microg/GmsCore', fdroid_recommended_release(fdroid_microg_repo, 'com.google.android.gms'))
-update_if_needed('microg/GsfProxy', fdroid_recommended_release(fdroid_microg_repo, 'com.google.android.gsf'))
-
 # F-Droid apps
-update_if_needed('fdroid/AuroraStore', fdroid_recommended_release(fdroid_main_repo, 'com.aurora.store'))
-update_if_needed('fdroid/NeoStore', fdroid_recommended_release(fdroid_main_repo, 'com.machiav3lli.fdroid'))
-update_if_needed('fdroid/LibreTube', fdroid_recommended_release(fdroid_main_repo, 'com.github.libretube'))
-update_if_needed('fdroid/MaterialFiles', fdroid_recommended_release(fdroid_main_repo, 'me.zhanghai.android.files'))
-update_if_needed('fdroid/Metro', fdroid_recommended_release(fdroid_main_repo, 'io.github.muntashirakon.Music'))
-update_if_needed('fdroid/Seal', fdroid_recommended_release(fdroid_main_repo, 'com.junkfood.seal'))
+update_if_needed('AuroraStore', fdroid_recommended_release(fdroid_main_repo, 'com.aurora.store'))
+update_if_needed('NeoStore', fdroid_recommended_release(fdroid_main_repo, 'com.machiav3lli.fdroid'))
+update_if_needed('LibreTube', fdroid_recommended_release(fdroid_main_repo, 'com.github.libretube'))
+update_if_needed('MaterialFiles', fdroid_recommended_release(fdroid_main_repo, 'me.zhanghai.android.files'))
+update_if_needed('Metro', fdroid_recommended_release(fdroid_main_repo, 'io.github.muntashirakon.Music'))
+update_if_needed('Seal', fdroid_recommended_release(fdroid_main_repo, 'com.junkfood.seal'))
 
 # IzzyOnDroid apps
-update_if_needed('fdroid/Metrolist', fdroid_recommended_release(fdroid_izzy_repo, 'com.metrolist.music'))
+update_if_needed('Metrolist', fdroid_recommended_release(fdroid_izzy_repo, 'com.metrolist.music'))
