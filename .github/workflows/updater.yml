@@ -1,7 +1,7 @@
 name: Updater
 on:
   schedule:
-    - cron:  '37 13 * * *'
+    - cron: '37 13 * * *'
   workflow_dispatch:
 jobs:
   Update-Apks:
@@ -22,7 +22,6 @@ jobs:
         working-directory: 'microg/updater'
       - run: pipenv run python main.py
         working-directory: 'microg/updater'
-        - run: pipx install pipenv
       - uses: actions/setup-python@v4
         with:
           python-version: '3.9'
