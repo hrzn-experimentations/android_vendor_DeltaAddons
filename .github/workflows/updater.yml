@@ -19,9 +19,9 @@ jobs:
           cache: 'pipenv'
           cache-dependency-path: 'microg/updater/Pipfile.lock'
       - run: pipenv install
-        working-directory: microg/updater
+        working-directory: 'microg/updater'
       - run: pipenv run python main.py
-        working-directory: microg/updater
+        working-directory: 'microg/updater'
         - run: pipx install pipenv
       - uses: actions/setup-python@v4
         with:
@@ -29,6 +29,6 @@ jobs:
           cache: 'pipenv'
           cache-dependency-path: 'fdroid/updater/Pipfile.lock'
       - run: pipenv install
-        working-directory: fdroid/updater
+        working-directory: 'fdroid/updater'
       - run: pipenv run python main.py
-        working-directory: fdroid/updater
+        working-directory: 'fdroid/updater'
