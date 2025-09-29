@@ -49,10 +49,10 @@
 	subtitle1="@string/sacred_nights_description"
 	title="@string/sacred_nights_title" />
 	<static-wallpaper
-	id="sangata_skies"
-	src="@drawable/sangata_skies"
-	subtitle1="@string/sangata_skies_description"
-	title="@string/sangata_skies_title" />
+	id="sangatta_skies"
+	src="@drawable/sangatta_skies"
+	subtitle1="@string/sangatta_skies_description"
+	title="@string/sangatta_skies_title" />
 	<static-wallpaper
 	id="separated_sky"
 	src="@drawable/separated_sky"

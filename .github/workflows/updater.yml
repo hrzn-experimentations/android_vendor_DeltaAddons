@@ -17,17 +17,17 @@ jobs:
         with:
           python-version: '3.9'
           cache: 'pipenv'
-          cache-dependency-path: 'microg/updater/Pipfile.lock'
+          cache-dependency-path: 'product/app/updater/Pipfile.lock'
       - run: pipenv install
-        working-directory: 'microg/updater'
+        working-directory: 'product/app/updater'
       - run: pipenv run python main.py
-        working-directory: 'microg/updater'
+        working-directory: 'product/app/updater'
       - uses: actions/setup-python@v4
         with:
           python-version: '3.9'
           cache: 'pipenv'
-          cache-dependency-path: 'fdroid/updater/Pipfile.lock'
+          cache-dependency-path: 'product/priv-app/updater/Pipfile.lock'
       - run: pipenv install
-        working-directory: 'fdroid/updater'
+        working-directory: 'product/priv-app/updater'
       - run: pipenv run python main.py
-        working-directory: 'fdroid/updater'
+        working-directory: 'product/priv-app/updater'

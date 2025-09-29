@@ -14,11 +14,16 @@ DeltaAddons is a custom vendor tree for LineageOS based ROMs. made to extend the
 ```bash
 repo sync -c --fetch-submodules android_vendor_DeltaAddons -j$(nproc --all)
 ```
+- patch vendor/lineage and fix the conflict if needed
+```bash
+cd vendor/lineage
+git am --reject ../DeltaAddons/patches/0001-DeltaAddons-Remove-conflicting-sound-props.patch
+```
 - add this to your device tree
 ```make
 # DeltaAddons
 WITH_GMS := false
-$(call inherit-product, vendor/DeltaAddons/config/delta.mk)
+$(call inherit-product, vendor/DeltaAddons/config.mk)
 ```
 
 # Build flags
@@ -35,9 +40,6 @@ Add Metro music player to your device
 TARGET_SHIP_YT_CLIENTS := true/false (Default: false)
 Add LibreTube, Metrolist, and Seal as YT clients
 
-TARGET_SHIP_SMARTSPACER := true/false (Default: false)
-Add Smartspacer widget service to your device
-
 TARGET_SHIP_MONET_BOOTANIMATION := true/false (Default: false)
 Use Google Pixel styled bootanimation
 ```
@@ -45,7 +47,6 @@ Use Google Pixel styled bootanimation
 # Notes
 - This vendor tree intended to use within LineageOS based ROMs that have the vanilla and GMS variant, if the 
 ROM source includes microG or if you don't want to include any GMS packages, remove the respective vendor tree first.  
-- The `Smartspacer` package will automatically included if you're building with my own [YAAP Launcher3 mod](https://github.com/hrzndelta/android_packages_apps_Launcher3). otherwise, you can use the build flag.  
 - This vendor tree is also included some wallpapers and ringtones, all credits goes to the original creator.
 
 # Credits

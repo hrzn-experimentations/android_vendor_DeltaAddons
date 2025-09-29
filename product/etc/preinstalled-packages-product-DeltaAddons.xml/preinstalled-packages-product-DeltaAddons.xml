@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- System packages to preinstall on Pixel 2019-and-newer devices, per user type.
+Documentation at frameworks/base/data/etc/preinstalled-packages-platform.xml
+-->
+<config>
+    <!--  LibreTube  -->
+    <install-in-user-type package="com.github.libretube">
+        <install-in user-type="FULL" />
+        <install-in user-type="PROFILE" />
+        <do-not-install-in user-type="android.os.usertype.profile.CLONE" />
+        <do-not-install-in user-type="android.os.usertype.profile.PRIVATE" />
+    </install-in-user-type>
+    <!--  Metrolist  -->
+    <install-in-user-type package="com.metrolist.music">
+        <install-in user-type="FULL" />
+        <install-in user-type="PROFILE" />
+        <do-not-install-in user-type="android.os.usertype.profile.CLONE" />
+        <do-not-install-in user-type="android.os.usertype.profile.PRIVATE" />
+    </install-in-user-type>
+    <!--  Metro  -->
+    <install-in-user-type package="io.github.muntashirakon.Music">
+        <install-in user-type="FULL" />
+        <install-in user-type="PROFILE" />
+        <do-not-install-in user-type="android.os.usertype.profile.CLONE" />
+        <do-not-install-in user-type="android.os.usertype.profile.PRIVATE" />
+    </install-in-user-type>
+    <!--  Seal  -->
+    <install-in-user-type package="com.junkfood.seal">
+        <install-in user-type="FULL" />
+        <install-in user-type="PROFILE" />
+        <do-not-install-in user-type="android.os.usertype.profile.CLONE" />
+        <do-not-install-in user-type="android.os.usertype.profile.PRIVATE" />
+    </install-in-user-type>
+</config>
