@@ -40,7 +40,6 @@ def update_if_needed(module: str, release: ApkRelease):
             print('{} up to date.'.format(module))
 
 fdroid_main_repo = 'https://www.f-droid.org/repo'
-fdroid_microg_repo = 'https://microg.org/fdroid/repo'
 fdroid_izzy_repo = 'https://apt.izzysoft.de/fdroid/repo'
 
 # F-Droid apps
@@ -53,6 +52,4 @@ update_if_needed('Seal', fdroid_recommended_release(fdroid_main_repo, 'com.junkf
 
 # IzzyOnDroid apps
 update_if_needed('Metrolist', fdroid_recommended_release(fdroid_izzy_repo, 'com.metrolist.music'))
-
-# microG apps
-update_if_needed('GsfProxy', fdroid_recommended_release(fdroid_microg_repo, 'com.google.android.gsf'))
+update_if_needed('Shizuku', fdroid_recommended_release(fdroid_izzy_repo, 'moe.shizuku.privileged.api'))
