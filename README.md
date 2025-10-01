@@ -17,18 +17,20 @@ repo sync -c --fetch-submodules android_vendor_DeltaAddons -j$(nproc --all)
 - patch vendor/lineage and fix the conflict if needed
 ```bash
 cd vendor/lineage
-git am --reject ../DeltaAddons/patches/0001-DeltaAddons-Remove-conflicting-sound-props.patch
+git am --reject ../DeltaAddons/patches/*.patch
 ```
 - add this to your device tree
 ```make
 # DeltaAddons
-WITH_GMS := false
 $(call inherit-product, vendor/DeltaAddons/config.mk)
 ```
 
 # Build flags
 ```make
-TARGET_USES_PLAYSTORE := true/false (Default: false)
+WITH_MICROG := true/false (Default: false)
+Add microG as a privacy focused GMS provider, may not work for some ROMs
+
+TARGET_USES_PLAYSTORE := true/false (Default: false) (Only works if microG is included)
 Add Google Play Store instead of Aurora Store as the app store
 
 TARGET_SHIP_JAMESDSP := true/false (Default: false)

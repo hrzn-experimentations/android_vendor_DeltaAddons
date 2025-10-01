@@ -20,3 +20,10 @@ PRODUCT_PACKAGES += \
     Metrolist \
     Seal
 endif
+
+ifeq ($(WITH_GMS),false)
+ifneq ($(WITH_MICROG),true)
+PRODUCT_PACKAGES += \
+    AuroraStore
+endif
+endif
