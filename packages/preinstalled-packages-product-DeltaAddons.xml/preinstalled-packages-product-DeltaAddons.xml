@@ -3,6 +3,13 @@
 Documentation at frameworks/base/data/etc/preinstalled-packages-platform.xml
 -->
 <config>
+    <!-- AnotherWidget -->
+    <install-in-user-type package="com.tommasoberlose.anotherwidget">
+        <install-in user-type="FULL" />
+        <install-in user-type="PROFILE" />
+        <do-not-install-in user-type="android.os.usertype.profile.CLONE" />
+        <do-not-install-in user-type="android.os.usertype.profile.PRIVATE" />
+    </install-in-user-type>
     <!--  LibreTube  -->
     <install-in-user-type package="com.github.libretube">
         <install-in user-type="FULL" />

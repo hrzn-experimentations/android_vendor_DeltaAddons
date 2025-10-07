@@ -28,6 +28,7 @@ PRODUCT_COPY_FILES += \
 
 ## Packages
 PRODUCT_PACKAGES += \
+    AnotherWidget \
     Fennec \
     MaterialFiles \
     Shizuku \
