@@ -3,7 +3,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := Metro
-LOCAL_OVERRIDES_PACKAGES := Eleven Twelve
+LOCAL_OVERRIDES_PACKAGES := Eleven Twelve Accord
 LOCAL_SRC_FILES := Metro.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRODUCT_MODULE := true
