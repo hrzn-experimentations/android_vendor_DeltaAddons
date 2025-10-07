@@ -30,7 +30,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Fennec \
     MaterialFiles \
-    NeoStore \
     Shizuku \
     preinstalled-packages-product-DeltaAddons.xml
 
@@ -45,11 +44,3 @@ PRODUCT_PACKAGES += \
     Metrolist \
     Seal
 endif
-
-ifeq ($(WITH_GMS),false)
-ifneq ($(WITH_MICROG),true)
-PRODUCT_PACKAGES += \
-    AuroraStore
-endif
-endif
-
