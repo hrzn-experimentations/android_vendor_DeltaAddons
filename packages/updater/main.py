@@ -43,6 +43,8 @@ fdroid_main_repo = 'https://www.f-droid.org/repo'
 fdroid_izzy_repo = 'https://apt.izzysoft.de/fdroid/repo'
 
 # F-Droid apps
+update_if_needed('AuroraStore', fdroid_recommended_release(fdroid_main_repo, 'com.aurora.store'))
+update_if_needed('NeoStore', fdroid_recommended_release(fdroid_main_repo, 'com.machiav3lli.fdroid'))
 update_if_needed('LibreTube', fdroid_recommended_release(fdroid_main_repo, 'com.github.libretube'))
 update_if_needed('MaterialFiles', fdroid_recommended_release(fdroid_main_repo, 'me.zhanghai.android.files'))
 update_if_needed('Metro', fdroid_recommended_release(fdroid_main_repo, 'io.github.muntashirakon.Music'))

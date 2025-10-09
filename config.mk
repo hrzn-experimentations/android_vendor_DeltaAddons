@@ -28,6 +28,8 @@ PRODUCT_COPY_FILES += \
 
 ## Packages
 PRODUCT_PACKAGES += \
+    AuroraStore \
+    NeoStore \
     AnotherWidget \
     Fennec \
     MaterialFiles \
