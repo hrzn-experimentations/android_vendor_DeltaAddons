@@ -50,4 +50,3 @@ update_if_needed('Seal', fdroid_recommended_release(fdroid_main_repo, 'com.junkf
 
 # IzzyOnDroid apps
 update_if_needed('Metrolist', fdroid_recommended_release(fdroid_izzy_repo, 'com.metrolist.music'))
-update_if_needed('Shizuku', fdroid_recommended_release(fdroid_izzy_repo, 'moe.shizuku.privileged.api'))
