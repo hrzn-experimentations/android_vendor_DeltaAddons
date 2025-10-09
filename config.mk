@@ -31,7 +31,6 @@ PRODUCT_PACKAGES += \
     AnotherWidget \
     Fennec \
     MaterialFiles \
-    Shizuku \
     preinstalled-packages-product-DeltaAddons.xml
 
 ifneq ($(TARGET_SHIP_METRO),false)
